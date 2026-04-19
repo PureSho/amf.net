@@ -1,0 +1,381 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Primary Meta -->
+  <title>SuRGe - Comp</title>
+  <meta name="description" content="SuRGe is a clan of players founded on July 16th, 2024. We promote decency, teamwork, and a comfortable environment for competitive and casual play.">
+  <link rel="stylesheet" href="../CSS_Files/04_comp.css">
+  <link rel="stylesheet" href="../CSS_Files/06_navbar.css">
+
+  <!-- Open Graph (Facebook / Discord / LinkedIn) -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="SuRGe Clan">
+  <meta property="og:description" content="Join SuRGe Clan — founded July 16th, 2024 — for competitive and casual play in a welcoming environment.">
+  <meta property="og:url" content="https://surge-homepage-16312050.codehs.me/">
+  <meta property="og:image" content="https://i.postimg.cc/L5f9MVSf/fully-transparent.png">
+  <meta property="og:image:alt" content="SuRGe Clan logo and banner">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="SuRGe Clan">
+  <meta name="twitter:description" content="Founded July 16th, 2024 — SuRGe Clan is built on respect, teamwork, and fun.">
+  <meta name="twitter:image" content="https://i.postimg.cc/L5f9MVSf/fully-transparent.png">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="https://i.postimg.cc/L5f9MVSf/fully-transparent.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://i.postimg.cc/L5f9MVSf/fully-transparent.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://i.postimg.cc/L5f9MVSf/fully-transparent.png">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Font -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body style="background-image:url(https://i.postimg.cc/2SJtJBZw/m-P5JVt-Cd.png);background-repeat: no-repeat;background-position: center center;background-size: cover;">
+    <header class="site-header">
+      <div class="brand">
+        <button id="menuBtn" aria-label="Toggle menu" class="hamburger" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <a href="../index.html" class="logo"><img style="width:24px; height:24px" src="https://i.postimg.cc/L5f9MVSf/fully-transparent.png">  SuRGe - Competitive</a>
+      </div>
+    <nav id="mainNav" class="nav">
+    <!-- About SRG -->
+    <div class="dropdown">
+      <a class="dropdown-toggle">About SRG</a>
+      <ul class="dropdown-content">
+        <li><a href="02_info.html">More Info</a></li>
+        <li><a href="03_roster.html">Clan Roster</a></li>
+        <li><a href="04_comp.html">Competitive</a></li>
+      </ul>
+    </div>
+
+    <!-- Join SuRGe -->
+    <div class="dropdown">
+      <a class="dropdown-toggle">Join SuRGe</a>
+      <ul class="dropdown-content">
+        <li><a href="05_tryouts.html">Tryouts</a></li>
+        <li><a href="06_contacts.html">Socials</a></li>
+      </ul>
+    </div>
+    </nav>
+    </header>
+<main>
+
+<!-- HERO -->
+<section class="hero">
+<img src="https://i.postimg.cc/R0JGzPhQ/fully-transparent.png" alt="SRG Clan Logo" style="width: 150px;">
+ <h1 style="color: crimson;font-family: monospace;text-decoration: underline;text-shadow: 0 1px 2px rgba(0,0,0,0.5),0 4px 8px rgba(0,0,0,0.7), -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;">SuRGe Competitive Stats</h1>
+  <p>Live performance metrics • Updated daily</p>
+</section>
+
+<!-- TEAM RANKINGS -->
+<section class="section">
+<h2 style="background-color: rgba(000, 0, 0, 0.5);padding: 0.4em 0.9em;border-radius: 999px;display: inline-block;">League & Rankings</h2>
+  <div class="team-grid" id="teamGrid"></div>
+</section>
+
+
+<div class="tabs">
+  <button class="tab-btn active" data-tab="overviewtab">Overview</button>
+  <a class="tab-btn" data-tab="clansleague" ><img style="width:40px; height:40px" src="https://codehs.com/uploads/1a6213511e5e4bdb5c051ab671469ae0"></a>
+  <a class="tab-btn" data-tab="cclasstab" ><img style="width:120px; height:40px" src="https://codehs.com/uploads/92ff8aab57bb3eaf91b9c596fabdaa6c"></a>
+</div>
+
+<div id="overviewtab" class="tab-content active" style="background-color: rgba(000, 0, 0, 0.5);padding: 0.4em 0.9em;">
+  <h2 style="margin-bottom: 15px;">Competitive Overview</h2>
+
+  <p style="color: var(--muted); margin-bottom: 20px;">
+    SuRGe competes across multiple official leagues, tracking performance, growth,
+    and consistency at every level of play. Below is a breakdown of our current
+    competitive environments.
+  </p>
+
+  <div class="team-grid">
+
+    <div class="team-card">
+      <div class="team-rank">CL</div>
+      <div class="team-name">Clans League</div>
+      <div class="team-stat">
+        Our highest-level competition featuring elite and ranked divisions.
+        Performance is updated live with standings, averages, and division filters.
+      </div>
+    </div>
+
+    <div class="team-card">
+      <div class="team-rank">CC</div>
+      <div class="team-name">CClass League</div>
+      <div class="team-stat">
+        Developmental and seasonal competition focused on consistency, growth,
+        and long-term performance across multiple divisions and past seasons.
+      </div>
+    </div>
+
+  </div>
+
+  <p style="margin-top: 24px;color: var(--muted);font-size: 0.95rem;text-align: center;">
+    Use the tabs above to switch between leagues, view historical data,
+    and analyze player and team performance across seasons.
+  </p>
+</div>
+
+
+<section id="clansleague" class="league-section tab-content" style="background: url(https://codehs.com/uploads/98dd28b257803cb54bccf36290166137);background-size: cover;background-position: center;/* height: 400px; */">
+  <style>
+    .league-section { padding: 3rem 1rem; background: linear-gradient(180deg,#0a0a0a,#111); color:#fff; font-family:sans-serif; }
+    .league-header { text-align:center; margin-bottom:1.5rem; }
+    .league-header h2 { font-size:2rem; letter-spacing:1px; }
+    .league-sub { font-size:0.95rem; }
+    .league-controls { display:flex; justify-content:center; gap:0.75rem; margin-bottom:1rem; flex-wrap:wrap; }
+    .league-controls select { background:#111; border:1px solid #333; color:#fff; padding:0.5rem 0.75rem; border-radius:6px; }
+    .league-status { text-align:center; font-size:0.9rem; color:#888; margin-bottom:1rem; }
+    .league-table-wrapper { overflow-x:auto; max-width:100%; margin-bottom:2rem; }
+    table.live-table { width:100%; border-collapse:collapse; }
+    table.live-table th, table.live-table td { border:1px solid #333; padding:0.5rem; text-align:left; }
+  </style>
+
+  <div class="league-header">
+    <h2 style="
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0.4em 0.9em;   /* controls oval size */
+    border-radius: 999px;  /* makes it oval */
+    display: inline-block;
+">Clans League</h2>
+    <p class="league-sub" style="
+    background-color: rgba(000, 0, 0, 0.5);
+    padding: 0.4em 0.9em; border-radius: 999px;
+">Official league standings &amp; competitive performance</p>
+  </div>
+
+
+  <div class="league-controls">
+
+    <!-- Division Buttons -->
+<select id="divisionSelect" class="division-controls">
+  <option value="EU_ELITE">EU Elite</option>
+  <option value="IMMORTAL">Immortal</option>
+  <option value="EMERALD">Emerald</option>
+  <option value="PLATINUM">Platinum</option>
+</select>
+
+
+    <!-- Existing Dropdowns -->
+    <select id="leagueSeason">
+      <option value="current">Standings</option>
+      <option value="AverageDPG">Average DPG</option>
+      <option value="AverageKPG">Average KPG</option>
+    </select>
+
+  </div>
+
+  <div id="leagueStatus" class="league-status" style=" background-color: rgba(0, 0, 0, 0.5);padding: 0.4em 0.9em; border-radius: 999px; margin: 0 auto;">EU ELITE — Current Standings</div>
+  <div class="league-table-wrapper" id="sheetWrapper"><table class="live-table">
+</table></div></section>
+
+<section id="cclasstab" class="league-section tab-content active" style="background: url(https://codehs.com/uploads/9447a05e46c7e9f525eaf725d10da92b);background-size: contain;background-position: center;/* height: 400px; */margin-top: 50px;background-repeat: no-repeat;">
+  <style>
+    .league-section { padding: 3rem 1rem; background: linear-gradient(180deg,#0a0a0a,#111); color:#fff; font-family:sans-serif; }
+    .league-header { text-align:center; margin-bottom:1.5rem; }
+    .league-header h2 { font-size:2rem; letter-spacing:1px; }
+    .league-sub { font-size:0.95rem; }
+    .league-controls { display:flex; justify-content:center; gap:0.75rem; margin-bottom:1rem; flex-wrap:wrap; }
+    .league-controls select { background:#111; border:1px solid #333; color:#fff; padding:0.5rem 0.75rem; border-radius:6px; }
+    .league-status { text-align:center; font-size:0.9rem; color:#888; margin-bottom:1rem; }
+    .league-table-wrapper { overflow-x:auto; max-width:100%; margin-bottom:2rem; }
+    table.live-table { width:100%; border-collapse:collapse; }
+    table.live-table th, table.live-table td { border:1px solid #333; padding:0.5rem; text-align:left; }
+  </style>
+
+  <div class="league-header">
+    <h2 style="height: 100px;background-image: url('https://codehs.com/uploads/92ff8aab57bb3eaf91b9c596fabdaa6c');background-size: contain;background-repeat: no-repeat;background-position: center;text-indent: -9999px;background-position: center;margin: 0 auto;
+"></h2>
+    <p class="league-sub" style="
+    background-color: rgba(000, 0, 0, 0.5);
+    padding: 0.4em 0.9em; border-radius: 999px;display:inline-block;
+">Official league standings &amp; competitive performance</p>
+  </div>
+
+
+<section class="other-league-section">
+<div class="league-controls">
+<select id="seasonTypeSelect">
+  <option value="squads" selected="">Squads Season</option>
+  <option value="duos">Duos Season</option>
+</select>
+</div>
+
+<div class="league-controls" id="squadsSeasons" style="display:none;">
+  <select id="squadsSeasonSelect" size="6">
+    <option value="SquadSZNs">Select Season</option>
+    <option value="Season17"><strong><em>Season 17</em></strong></option>
+    <option value="Season16">Season 16</option>
+    <option value="Season15">Season 15</option>
+    <option value="Season14">Season 14</option>
+    <option value="Season13">Season 13</option>
+    <option value="Season12">Season 12</option>
+    <option value="Season11">Season 11</option>
+    <option value="Season10">Season 10</option>
+    <option value="Season9">Season 9</option>
+    <option value="Season8">Season 8</option>
+    <option value="Season7">Season 7</option>
+    <option value="Season6">Season 6</option>
+    <option value="Season5">Season 5</option>
+    <option value="Season4">Season 4</option>
+    <option value="Season3">Season 3</option>
+    <option value="Season2">Season 2</option>
+    <option value="Season1">Season 1</option>
+  </select>
+</div>
+
+<div class="league-controls" id="duosSeasons" style="display:none;">
+  <select id="duosSeasonSelect" size="6">
+    <option value="DuosSZNs">Select Season</option>
+    <option value="DuosSeason9"><strong><em>Season 9</em></strong></option>
+    <option value="DuosSeason8">Season 8</option>
+    <option value="DuosSeason7">Season 7</option>
+    <option value="DuosSeason6">Season 6</option>
+    <option value="DuosSeason5">Season 5</option>
+    <option value="DuosSeason4">Season 4</option>
+    <option value="DuosSeason3">Season 3</option>
+    <option value="DuosSeason2">Season 2</option>
+    <option value="DuosSeason1">Season 1</option>
+  </select>
+</div>
+
+<!-- Duos Division Selector -->
+<div class="league-controls" id="duosDivision" style="display:none;">
+  <select id="duosDivisionSelect">
+    <option>Select Division</option>
+    <option value="Uprising">Uprising</option>
+    <option value="Seekers">Seekers</option>
+    <option value="Stronghold">Stronghold</option>
+    <option value="Bureau">Bureau</option>
+    <option value="Phoenix">Phoenix</option>
+  </select>
+</div>
+
+<!-- Division Selector 1 -->
+<div class="league-controls" id="division1">
+  <select id="divisionSelect1">
+    <option>Select Division</option>
+    <option value="Construction">Construction</option>
+    <option value="Frontier">Frontier</option>
+    <option value="Defiance">Defiance</option>
+    <option value="Metropolis">Metropolis</option>
+    <option value="Tower">Tower</option>
+    <option value="Kingdom">Kingdom</option>
+  </select>
+</div>
+
+  <!-- Table and status -->
+  <div id="otherLeagueStatus" class="league-status">Failed to load data</div>
+  <div id="otherSheetWrapper" class="league-table-wrapper"></div>
+
+</section>
+
+
+  </section><table class="live-table" style="
+    background-color: rgba(169, 169, 169, 0.2);
+">
+</section>
+    
+<footer class="under-construction" style=" background-color: rgba(000, 0, 0, 0.5); padding: 0.4em 0.9em; border-radius: 999px; display: block; text-align: center;">
+  <h2>🚧 Under Construction 🚧</h2>
+  <p>We're working hard to bring you something new. Check back soon!</p>
+</footer>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <p>© <span id="year">2026</span> SuRGe Clan. All rights reserved.</p>
+  </footer>
+
+
+<script src="../JS_Files/01_cclass.js" defer></script>
+<script src="../JS_Files/02_clansleague.js" defer></script>
+  <script>
+  const tabButtons = document.querySelectorAll('.tab-btn');
+  const tabContents = document.querySelectorAll('.tab-content');
+
+  tabButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const target = btn.dataset.tab;
+
+      tabButtons.forEach(b => b.classList.remove('active'));
+      tabContents.forEach(c => c.classList.remove('active'));
+
+      btn.classList.add('active');
+      document.getElementById(target).classList.add('active');
+    });
+  });
+  /* ---------- Mobile menu toggle (no persistent inline styling leak) ---------- */
+  if (menuBtn && mainNav) {
+    menuBtn.addEventListener('click', () => {
+      const isOpen = menuBtn.getAttribute('aria-expanded') === 'true';
+      menuBtn.setAttribute('aria-expanded', String(!isOpen));
+      if (!isOpen) {
+        // Apply only necessary inline styles for the mobile menu to appear (temporary)
+        mainNav.dataset._wasHidden = getComputedStyle(mainNav).display === 'none' ? 'true' : '';
+        mainNav.style.display = 'flex';
+        mainNav.style.flexDirection = 'column';
+        mainNav.style.gap = '12px';
+        mainNav.style.position = 'absolute';
+        mainNav.style.right = '16px';
+        mainNav.style.top = '66px';
+        mainNav.style.background = 'rgba(6,10,20,0.7)';
+        mainNav.style.padding = '12px';
+        mainNav.style.borderRadius = '10px';
+        mainNav.style.zIndex = '9999';
+      } else {
+        // Revert inline styles
+        ['display','flexDirection','gap','position','right','top','background','padding','borderRadius','zIndex'].forEach(k => mainNav.style[k] = '');
+        if (mainNav.dataset._wasHidden) { mainNav.style.display = ''; delete mainNav.dataset._wasHidden; }
+      }
+    });
+  }
+
+  /* Close mobile nav if clicking outside (optional friendly behavior) */
+  document.addEventListener('click', (e) => {
+    if (!menuBtn || !mainNav) return;
+    if (menuBtn.getAttribute('aria-expanded') !== 'true') return;
+    if (!mainNav.contains(e.target) && !menuBtn.contains(e.target)) {
+      menuBtn.click();
+    }
+  });
+</script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const dropdowns = document.querySelectorAll(".dropdown");
+
+  dropdowns.forEach(dropdown => {
+    const toggle = dropdown.querySelector(".dropdown-toggle");
+
+    toggle.addEventListener("click", (e) => {
+      e.preventDefault();
+
+      dropdowns.forEach(d => {
+        if (d !== dropdown) d.classList.remove("show");
+      });
+
+      dropdown.classList.toggle("show");
+    });
+  });
+
+  document.addEventListener("click", (e) => {
+    dropdowns.forEach(dropdown => {
+      if (!dropdown.contains(e.target)) {
+        dropdown.classList.remove("show");
+      }
+    });
+  });
+});
+</script>
+
+
+</main>
+</body>
+</html>

@@ -1,0 +1,585 @@
+<!doctype html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SuRGe — Info</title>
+    <meta name="description" content="SuRGe is a clan of players founded on July 16th 2024. Join us for competitive and casual play.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="SuRGe Clan">
+    <meta property="og:description" content="SuRGe is a clan of players that play a vr game called POPULATION:ONE and was founded on July 16th 2024.">
+    <meta property="og:image" content="https://i.imgur.com/a2w09ff.png">
+    <link rel="icon" href="https://i.imgur.com/a2w09ff.png">
+    <link rel="stylesheet" href="../CSS_Files/02_info.css">
+    <link rel="stylesheet" href="../CSS_Files/06_navbar.css">
+
+</head>
+<body>
+  <div class="page">
+    <header class="site-header">
+      <div class="brand">
+        <button id="menuBtn" aria-label="Toggle menu" class="hamburger" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <a href="../index.html" class="logo"><img style="width:24px; height:24px" src="https://i.postimg.cc/L5f9MVSf/fully-transparent.png">  SuRGe - Info</a>
+      </div>
+        
+    <nav id="mainNav" class="nav">
+    <!-- About SRG -->
+    <div class="dropdown">
+      <a class="dropdown-toggle">About SRG</a>
+      <ul class="dropdown-content">
+        <li><a href="02_info.html">More Info</a></li>
+          <ul><a href="#features"><em>-Events</em></a></ul>
+          <ul><a href="#about"><em>-About</em></a></ul>
+        <li><a href="03_roster.html">Clan Roster</a></li>
+        <li><a href="04_comp.html">Competitive</a></li>
+      </ul>
+    </div>
+
+    <!-- Join SuRGe -->
+    <div class="dropdown">
+      <a class="dropdown-toggle">Join SuRGe</a>
+      <ul class="dropdown-content">
+        <li><a href="05_tryouts.html">Tryouts</a></li>
+        <li><a href="06_contacts.html">Socials</a></li>
+      </ul>
+    </div>
+    </nav>
+</header>
+<main>
+    <section id="home" class="hero">
+                <!-- Background video (muted, looped) -->
+        <video id="bgVideo" class="hero-video" autoplay="" muted="" loop="" playsinline="" aria-hidden="true" poster="assets/hero-poster.jpg">
+            <source src="assets/hero-loop.mp4" type="video/mp4">
+            <source src="assets/hero-loop.webm" type="video/webm">
+        </video>
+                <!-- Particle canvas overlay -->
+        <canvas id="particleCanvas" class="particle-canvas" aria-hidden="true" width="1447" height="973"></canvas>
+        <div class="hero-content">
+            <img src="https://i.postimg.cc/R0JGzPhQ/fully-transparent.png" class="srg-logo" alt="SRG Clan Logo">
+            <h1 class="hero-title">
+                <span id="typed">And SuRGe On</span>
+                <span class="cursor">|</span>
+            </h1>
+            <h2><p class="hero-sub">Read up on our clan and how we operate!</p></h2>
+            <div class="hero-cta">
+                <a class="btn primary" href="#features">Events</a>
+                <a class="btn ghost" href="#about">About us</a>
+            </div>
+        </div>
+                <!-- Animated SVG wave -->
+    <svg class="hero-wave" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true">
+        <path fill="currentColor" d="M0,40 C220,140 440,0 720,40 C1000,80 1220,0 1440,40 L1440 120 L0 120 Z"></path>
+    </svg>
+</section>
+
+
+
+
+
+    <!-- POPULATION:ONE VR Section -->
+<section class="supported-games">
+    <div class="section-content-container section--centered" style="color:white; text-align:center; background-color:#2b0404; margin-top:-60px; margin-bottom:-20px;">
+        <h1>Clan gamers of <strong style="color:red">POPULATION:ONE VR</strong><br>with more than
+            <strong style="color:red">50</strong> active members!
+        </h1>
+        <div>
+            <p>From first-person shooters and survival games to the virtual reality battle royale world,
+                    you'll always have something to play. And there is SuRGe members playing all around the world.</p>
+        </div>
+    </div>
+</section>
+
+    
+    
+    
+<section aria-hidden="false" class="section">
+  <div class="section-sep" aria-hidden="true">
+    <h2 class="section-title" style="margin-top:20px;">Events</h2>
+  </div>
+
+  <section id="features" class="section features" aria-label="Events">
+    <div class="container">
+      <!-- Primary visible events (grid) -->
+      <div class="event-grid" id="eventGrid" role="list" aria-label="Featured events">
+        <article class="event-card reveal" role="listitem">
+          <img class="event-thumb" src="https://www.uploadvr.com/content/images/size/w1200/2020/10/POP1ScreenshotSquad.png" alt="Weekly Scrims" loading="lazy">
+          <div class="event-head">
+            <h3>Weekly <br><span style="padding-left:12px">Scrims</span></h3>
+            <time datetime="2025-01-01T20:00">Every Sat • 13:00 EST</time>
+          </div>
+          <div class="event-body">
+            <p>Competitive practice matches with in-house matchmaking and coaching feedback for teams of all levels.</p>
+          </div>
+        </article>
+
+        <article class="event-card reveal visible" role="listitem">
+          <img class="event-thumb" src="https://i.imgur.com/GvEdHqZ.jpeg" alt="Custom Hangouts" loading="lazy">
+          <div class="event-head">
+            <h3>Original <br><span style="padding-left:12px">5 Levels</span></h3>
+            <time>Weekly • Casual</time>
+          </div>
+          <div class="event-body">
+            <p>Open lobbies for casual play — great for meeting new members and practicing strategy without pressure.</p>
+          </div>
+        </article>
+
+        <article class="event-card reveal visible" role="listitem">
+          <img class="event-thumb" src="https://i.imgur.com/fjXlexe.jpeg" alt="Swordfest Nights" loading="lazy">
+          <div class="event-head">
+            <h3>Swordfest <br><span style="padding-left:12px">Nights</span></h3>
+            <time>Every Sun &amp; Thu <br style="margin-left:15px">• at 8:30 EST</time>
+          </div>
+          <div class="event-body">
+            <p>High-energy melee-focused events with fun modifiers, prizes, and community shout-outs.</p>
+          </div>
+        </article>
+
+        <article class="event-card reveal visible" role="listitem">
+          <img class="event-thumb" src="https://pbs.twimg.com/media/FPrS7ZeVsAI6Nxu.jpg" alt="1v1 Arena" loading="lazy">
+          <div class="event-head">
+            <h3>1v1 <br><span style="padding-left:12px">Battle</span></h3>
+            <time>Every 3/mo • Tournament</time>
+          </div>
+          <div class="event-body">
+            <p>Solo duel tournament for bragging rights — signups open in the Discord one week prior.</p>
+          </div>
+        </article>
+      </div>
+
+      <!-- Hidden extra events (start collapsed). JS toggles aria-hidden & .expanded -->
+      <div class="more-events expanded" id="moreEvents" aria-hidden="false" role="list" aria-label="More events">
+        <article class="event-card reveal visible" role="listitem">
+          <img class="event-thumb" src="https://i.imgur.com/ZthQvw3.jpeg" alt="New Member Orientation" loading="lazy">
+          <div class="event-head">
+            <h3>Recruit <br><span style="padding-left:12px">Introductions</span></h3>
+            <time>Every Sun • 15:00 EST</time>
+          </div>
+          <div class="event-body">
+            <p>Intro session for new recruits: meet officers, learn clan rules, and find a mentor.</p>
+          </div>
+        </article>
+
+        <article class="event-card reveal visible" role="listitem">
+          <img class="event-thumb" src="https://i.imgur.com/klPSZHp.jpeg" alt="Ranked Coaching" loading="lazy">
+          <div class="event-head">
+            <h3>Ranked <br><span style="padding-left:12px">Coaching</span></h3>
+            <time>Weekly • By Request</time>
+          </div>
+          <div class="event-body">
+            <p>One-on-one or small-group training/coaching with lower experienced players to help improve game sense and aim.</p>
+          </div>
+        </article>
+
+        <article class="event-card reveal visible" role="listitem">
+          <img class="event-thumb" src="https://i.imgur.com/rasyubV.jpeg" alt="Clan Challenges" loading="lazy">
+          <div class="event-head">
+            <h3>Clan <br><span style="padding-left:12px">Challenges</span></h3>
+            <time>Seasonal • Specials</time>
+          </div>
+          <div class="event-body">
+            <p>Community challenges with seasonal objectives and small prizes to encourage teamwork and participation.</p>
+          </div>
+        </article>
+
+        <article class="event-card reveal visible" role="listitem">
+          <img class="event-thumb" src="https://i.imgur.com/vWddDpR.png" alt="Community Stream Night" loading="lazy">
+          <div class="event-head">
+            <h3>Stream<br><span style="padding-left:12px">Night</span></h3>
+            <time>Monthly • 20:00 EST</time>
+          </div>
+          <div class="event-body">
+            <p>Featured streamers and community highlights — tune in to watch matches and community content creators.</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="view-more-wrap">
+        <button id="viewMoreBtn" class="view-more-btn" aria-expanded="true" aria-controls="moreEvents">View less events</button>
+      </div>
+    </div>
+  </section>
+</section>
+    
+    
+    
+    
+    
+    <!-- About Section -->
+<div class="section-sep" aria-hidden="true" style="margin-top:-75px">
+    <h2 style="text-align:center; color:white; margin:20px;">About</h2>
+</div> 
+
+<section id="about" class="section about decorated-about" aria-labelledby="about-heading">
+  <div class="container">
+    <div class="about-card" role="region" aria-labelledby="about-heading">
+      <div class="about-header">
+        <div>
+          <h3 id="about-heading" class="about-title-main">
+        <img src="https://i.postimg.cc/L5f9MVSf/fully-transparent.png" alt="PureSho" style="width:40px;height:40px;border-radius:50%;">
+SuRGe — Who we are</h3>
+          <div class="about-sub">Founded on June 13th, 2024 — a respectful, competitive community</div>
+        </div>
+      </div>
+
+      <div class="about-body">
+        <p>Welcome to SuRGe (SRG). We're a friendly, competitive clan built on respect and growth. Whether you're here to scrim, learn, or simply hang out with fellow players, you'll find a place and people ready to support your climb.</p>
+
+        <p>Thanks to SRGxPureSho for steady leadership and consistent activity — our environment values positivity, teamwork, and constructive improvement. Work hard, stay humble, and you'll earn respect in our ranks.</p>
+            <h3 style="text-align:center"><strong>★ Mission ★</strong></h3><div class="mission" aria-hidden="false">
+          <div class="pill" aria-hidden="false">
+            <p><strong>Objective:</strong> Strengthen community bonds and elevate SuRGe through teamwork, skill, and respect.</p>
+          </div>
+          <div class="pill" aria-hidden="false">
+            <strong>Outcome:</strong>
+            <p>Grow SuRGe in strength, unity, and reputation while fostering a non-toxic place to play and improve.</p>
+          </div>
+        </div>
+
+        <div class="about-cta" role="region" aria-label="About actions">
+          <a class="btn-join" href="05_tryouts.html">Pre-Tryout Application</a>
+          <a class="btn-learn" href="06_contacts.html">Contacts</a>
+        </div>
+      </div>
+    </div>
+
+    <aside class="about-side" aria-hidden="false">
+      <div class="about-visual" role="img" aria-label="SuRGe clan visual"></div>
+
+      <div class="stats" role="list" aria-label="SuRGe stats">
+        <div class="stat" role="listitem">
+          <span class="n">30+</span>
+          <span class="l">Active Members</span>
+        </div>
+        <div class="stat" role="listitem">
+          <span class="n">8</span>
+          <span class="l">Weekly Events</span>
+        </div>
+        <div class="stat" role="listitem">
+          <span class="n">24/7</span>
+          <span class="l">Community Chat</span>
+        </div>
+      </div>
+
+      <div style="display:flex; gap:10px; justify-content:space-between;">
+        <div style="flex:1;">
+          <a class="btn-join" href="#features" style="display:block;text-align:center">See Events</a>
+        </div>
+        <div style="flex:1;">
+          <a class="btn-learn" href="03_roster.html" style="display:block;text-align:center">Roster</a>
+        </div>
+      </div>
+    </aside>
+  </div>
+</section>
+    
+    
+
+
+<!-- Team Grid / Founders -->
+<section id="about-team" style="padding:56px 20px;font-family:Inter,system-ui;background: rgba(0, 0, 0, 0.75);color:#fff;">
+  <div style="max-width:1100px;margin:0 auto;text-align:center;">
+    <h2 style="font-size:1.6rem;margin-bottom:8px;">Meet the leadership</h2>
+    <p style="color:rgba(255,255,255,0.78);margin-bottom:20px;">The people who organize events, mentor new members, and keep things running.</p>
+    
+    <!-- Founders -->
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:16px;align-items:start;">
+      <div style="background:rgba(255,255,255,0.02);padding:16px;border-radius:12px;">
+        <img src="https://i.imgur.com/3gUKcJ4.png" alt="PureSho" style="width:80px;height:80px;border-radius:50%;object-fit:cover;margin-bottom:10px">
+        <h4 style="margin:0 0 6px;">SRGxPureSho</h4>
+        <p style="margin:0;color:rgba(255,255,255,0.75);font-size:0.95rem;">Founder &amp; lead organizer. Focused on the entire clan and its events.</p>
+      </div>
+      <div style="background:rgba(255,255,255,0.02);padding:16px;border-radius:12px;">
+        <img src="https://i.imgur.com/GlPKs3y.jpeg" alt="PureSho" style="width:80px;height:80px;border-radius:50%;object-fit:cover;margin-bottom:10px">
+        <h4 style="margin:0 0 6px;">HappityRabbit</h4>
+        <p style="margin:0;color:rgba(255,255,255,0.75);font-size:0.95rem;">Founder &amp; Retired.</p>
+      </div>
+      </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:16px;align-items:start;margin-top:25px;">
+      <div style="background:rgba(255,255,255,0.02);padding:16px;border-radius:12px;">
+        <img src="https://i.imgur.com/HDZ0ZLE.png" alt="DarkDog" style="width:80px;height:80px;border-radius:50%;object-fit:cover;margin-bottom:10px">
+        <h4 style="margin:0 0 6px;">SRG.DarkDog</h4>
+        <p style="margin:0;color:rgba(255,255,255,0.75);font-size:0.95rem;">Lead Tryout Manager. Focused on the clan, its recruitment, and Training.</p>
+      </div>
+    <!-- Leaders -->
+      <div style="background:rgba(255,255,255,0.02);padding:16px;border-radius:12px;">
+        <img src="https://i.imgur.com/S08hdYF.png" alt="Bobby" style="width:80px;height:80px;border-radius:50%;object-fit:cover;margin-bottom:10px">
+        <h4 style="margin:0 0 6px;">SRGxThe_Bob_72</h4>
+        <p style="margin:0;color:rgba(255,255,255,0.75);font-size:0.95rem;">Lead Scrims & Events Manager. Focused on the clan and the organization of its events.</p>
+      </div>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:16px;align-items:start;margin-top:25px;">
+      <div style="background:rgba(255,255,255,0.02);padding:16px;border-radius:12px;">
+        <img src="https://i.imgur.com/Wg4LOGk_d.webp?maxwidth=760&amp;fidelity=grand" alt="PureSho" style="width:80px;height:80px;border-radius:50%;object-fit:cover;margin-bottom:10px">
+        <h4 style="margin:0 0 6px;">SRGxWisnieski</h4>
+        <p style="margin:0;color:rgba(255,255,255,0.75);font-size:0.95rem;">Lead Training Manager. Focused on training recruits.</p>
+      </div>
+      <div style="background:rgba(255,255,255,0.02);padding:16px;border-radius:12px;">
+        <img src="https://i.imgur.com/MjWt1R5.png" alt="AquaBoy" style="width:80px;height:80px;border-radius:50%;object-fit:cover;margin-bottom:10px">
+        <h4 style="margin:0 0 6px;">SRGxFISH_AT_HOME</h4>
+        <p style="margin:0;color:rgba(255,255,255,0.75);font-size:0.95rem;">Description<br>Lead Recruitment Manager. Focused on the clan and its community status.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- About Timeline: Milestones -->
+<section id="about-timeline" style="background: rgba(0, 0, 0, 0.75);color:#fff;font-family:Inter,system-ui; margin-top:-21px; margin-bottom:10px;">
+  <div style="max-width:900px;margin:0 auto;margin-left:10px;margin-right:10px;">
+    <h2 style="font-size:1.6rem;margin-bottom:10px;">Our story</h2>
+    <p style="color:rgba(255,255,255,0.8);margin-bottom:20px;">A brief timeline of SuRGe's growth and major milestones.</p>
+
+    <ol style="padding-left:0;list-style:none;margin:0;">
+      <li style="display:flex;gap:14px;margin-bottom:20px;">
+        <div style="min-width:76px;color:#ef4444;font-weight:700">Jun <br>2024</div>
+        <div>
+          <h3 style="margin:0 0 6px;font-size:1rem;">Founded</h3>
+          <p style="margin:0;color:rgba(255,255,255,0.78);line-height:1.5">SuRGe was created to be a respectful clan focused on Population:One VR and its community.</p>
+        </div>
+      </li>
+
+      <li style="display:flex;gap:14px;margin-bottom:20px;">
+        <div style="min-width:76px;color:#ef4444;font-weight:700">Aug <br>2024</div>
+        <div>
+          <h3 style="margin:0 0 6px;font-size:1rem;">First Tournament Win</h3>
+          <p style="margin:0;color:rgba(255,255,255,0.78);line-height:1.5">Won a $150 Squads Tournament.</p>
+        </div>
+      </li>
+
+      <li style="display:flex;gap:14px;margin-bottom:0;">
+        <div style="min-width:76px;color:#ef4444;font-weight:700">Feb <br>2026</div>
+        <div>
+          <h3 style="margin:0 0 6px;font-size:1rem;">60+ Members</h3>
+          <p style="margin:0;color:rgba(255,255,255,0.78);line-height:1.5">Crossed over 60 active members across multiple regions.</p>
+        </div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+
+
+
+
+<!-- Values & Mission Cards -->
+<section id="about-values" style="padding:20px 5px;background: rgba(0, 0, 0, 0.75);color:#fff;font-family:Inter,system-ui; margin-top:-10px;">
+  <div style="max-width:1100px;margin:0 auto;text-align:center;">
+    <h2 style="font-size:1.6rem;margin-bottom:8px;">Our values</h2>
+    <p style="color:rgba(255,255,255,0.8);margin-bottom:28px;">What we stand for, how we behave and what we build together.</p>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;">
+      <div style="background:rgba(255,255,255,0.02);padding:18px;border-radius:12px;">
+        <h3 style="margin-top:0;color:#ef4444;">Respect</h3>
+        <p style="color:rgba(255,255,255,0.78);margin:8px 0 0;">We keep the community inclusive and harassment-free.</p>
+      </div>
+      <div style="background:rgba(255,255,255,0.02);padding:18px;border-radius:12px;">
+        <h3 style="margin-top:0;color:#ef4444;">Teamwork</h3>
+        <p style="color:rgba(255,255,255,0.78);margin:8px 0 0;">We win and learn together, mentorship is built-in.</p>
+      </div>
+      <div style="background:rgba(255,255,255,0.02);padding:18px;border-radius:12px;">
+        <h3 style="margin-top:0;color:#ef4444;">Growth</h3>
+        <p style="color:rgba(255,255,255,0.78);margin:8px 0 0;">We practice, compete, and support players progress.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<!-- Split About Section with Image + Quick Stats -->
+<section id="about-split" style="padding:56px 20px;background: rgba(0, 0, 0, 0.75);color:#fff;">
+  <div style="max-width:1100px;margin:0 auto;display:grid;grid-template-columns:auto;text-align:center;align-items:center;font-family:Inter,system-ui;height:100%">
+    <div style="background-image:url('https://i.postimg.cc/2SJtJBZw/m-P5JVt-Cd.png');background-size:cover;background-position:center;border-radius:12px;box-shadow:0 8px 30px rgba(0,0,0,0.6);
+">
+<div style="
+    width:100%;
+    background: rgba(0,0,0,0.35);
+    backdrop-filter: brightness(60%) blur(4px);
+    padding: 24px;
+    border-radius: 12px;
+    box-sizing: border-box;
+    height: 648px;
+">
+    <h2 style="margin-top:0;font-size:1.8rem;">Who we are</h2>
+
+    <p style="color:rgba(255,255,255,0.9);line-height:1.6;">
+        SuRGe brings together players across timezones who value skillful play and mutual respect.<br>
+        We run events, practice nights, and community tournaments.
+    </p>
+
+    <div style="
+        margin-top:16px;
+        display:grid;
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+        gap:12px;
+        width:100%;
+    ">
+        <div style="background:rgba(255,255,255,0.03);border-radius:10px;text-align:center;padding:12px 0;">
+            <div style="font-weight:700;font-size:1.2rem;">40+</div>
+            <div style="font-size:0.85rem;color:rgba(255,255,255,0.7)">Active members</div>
+        </div>
+
+        <div style="background:rgba(255,255,255,0.03);border-radius:10px;text-align:center;padding:12px 0;">
+            <div style="font-weight:700;font-size:1.2rem;">Weekly</div>
+            <div style="font-size:0.85rem;color:rgba(255,255,255,0.7)">Events &amp; scrims</div>
+        </div>
+
+        <div style="background:rgba(255,255,255,0.03);border-radius:10px;text-align:center;padding:12px 0;">
+            <div style="font-weight:700;font-size:1.2rem;">Global</div>
+            <div style="font-size:0.85rem;color:rgba(255,255,255,0.7)">Across timezones</div>
+        </div>
+    </div>
+
+    <a href="#features" style="
+        margin-top:20px;
+        display:inline-block;
+        padding:10px 14px;
+        border-radius:8px;
+        background:linear-gradient(90deg,#ef4444,#dc2626);
+        color:#fff;
+        text-decoration:none;
+        font-weight:600;
+    ">
+        See events
+    </a>
+            <div style="font-size:0.85rem;color:rgba(255,255,255,0.7); margin:10px">Events &amp; scrims</div>
+        
+        <div style="background:rgba(255,255,255,0.03);border-radius:10px;text-align:center;min-width:120px;">
+            <div style="font-weight:700;font-size:1.2rem;">Global</div>
+            <div style="font-size:0.85rem;color:rgba(255,255,255,0.7)">Across timezones</div>
+        </div>
+    
+<a href="#features" style="margin-top:12px;display:inline-block;padding:10px 14px;border-radius:8px;background:linear-gradient(90deg,#ef4444,#dc2626);color:#fff;text-decoration:none;font-weight:600;margin-bottom:8px;">See events</a>
+
+</div>
+</div>
+</div>
+</section>
+
+
+
+
+
+
+<section id="about-stats" style="background: rgba(0, 0, 0, 0.75);color:#fff;font-family:Inter,system-ui;">
+  <div style="max-width:1100px;margin:0 auto;display:grid;grid-template-columns:auto;text-align:center;">
+    <div>
+      <h2 style="font-size:1.6rem;">Join SuRGe</h2>
+      <p style="color:rgba(255,255,255,0.85);margin-bottom:18px;margin-top:-12px;">A friendly clan for players who want competitive structure and casual play.</p>
+
+      <div style="justify-content: center; display:grid; grid-template-columns:auto; gap:12px; grid: auto / auto auto;">
+        <div style="background:rgba(255,255,255,0.03);border-radius:10px;text-align:center;min-width:120px;">
+          <div style="font-size:1.4rem;font-weight:700;color:#fff;">40+</div>
+          <div style="font-size:0.85rem;color:rgba(255,255,255,0.75)">Active members</div>
+        </div>
+        <div style="background:rgba(255,255,255,0.03);border-radius:10px;text-align:center;min-width:120px;">
+          <div style="font-size:1.4rem;font-weight:700;color:#fff;">Weekly</div>
+          <div style="font-size:0.85rem;color:rgba(255,255,255,0.75)">Events &amp; scrims</div>
+        </div>
+      </div>
+      </div>
+  </div>
+<!-- 2) Dual SVG waves -->
+<div style="position:relative">
+  <svg viewBox="0 0 1440 140" preserveAspectRatio="none" style="width:100%;height:140px;display:block">
+    <path d="M0,20 C360,120 1080,-40 1440,20 L1440,140 L0,140 Z" fill="#2b0404"></path>
+    <path d="M0,60 C360,20 1080,160 1440,60 L1440,140 L0,140 Z" fill="#120406" opacity="0.95"></path>
+  </svg>
+</div>
+<section style="background:#120406;padding:2rem 0;color:#fff;text-align:center">    <div>
+        <footer class="site-footer">
+      <p>© <span id="year">2026</span> Made &amp; Developed by: PureSho</p>
+        </footer>
+    </div>
+    <script src="../JS_Files/04_info.js" defer></script>
+    <script src="../JS_Files/05_navbar.js" defer></script>
+
+<script>
+  const tabButtons = document.querySelectorAll('.tab-btn');
+  const tabContents = document.querySelectorAll('.tab-content');
+
+  tabButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const target = btn.dataset.tab;
+
+      tabButtons.forEach(b => b.classList.remove('active'));
+      tabContents.forEach(c => c.classList.remove('active'));
+
+      btn.classList.add('active');
+      document.getElementById(target).classList.add('active');
+    });
+  });
+  /* ---------- Mobile menu toggle (no persistent inline styling leak) ---------- */
+  if (menuBtn && mainNav) {
+    menuBtn.addEventListener('click', () => {
+      const isOpen = menuBtn.getAttribute('aria-expanded') === 'true';
+      menuBtn.setAttribute('aria-expanded', String(!isOpen));
+      if (!isOpen) {
+        // Apply only necessary inline styles for the mobile menu to appear (temporary)
+        mainNav.dataset._wasHidden = getComputedStyle(mainNav).display === 'none' ? 'true' : '';
+        mainNav.style.display = 'flex';
+        mainNav.style.flexDirection = 'column';
+        mainNav.style.gap = '12px';
+        mainNav.style.position = 'absolute';
+        mainNav.style.right = '16px';
+        mainNav.style.top = '66px';
+        mainNav.style.background = 'rgba(6,10,20,0.7)';
+        mainNav.style.padding = '12px';
+        mainNav.style.borderRadius = '10px';
+        mainNav.style.zIndex = '9999';
+      } else {
+        // Revert inline styles
+        ['display','flexDirection','gap','position','right','top','background','padding','borderRadius','zIndex'].forEach(k => mainNav.style[k] = '');
+        if (mainNav.dataset._wasHidden) { mainNav.style.display = ''; delete mainNav.dataset._wasHidden; }
+      }
+    });
+  }
+
+  /* Close mobile nav if clicking outside (optional friendly behavior) */
+  document.addEventListener('click', (e) => {
+    if (!menuBtn || !mainNav) return;
+    if (menuBtn.getAttribute('aria-expanded') !== 'true') return;
+    if (!mainNav.contains(e.target) && !menuBtn.contains(e.target)) {
+      menuBtn.click();
+    }
+  });
+</script>
+        <script>
+document.addEventListener("DOMContentLoaded", () => {
+  const dropdowns = document.querySelectorAll(".dropdown");
+
+  dropdowns.forEach(dropdown => {
+    const toggle = dropdown.querySelector(".dropdown-toggle");
+
+    toggle.addEventListener("click", (e) => {
+      e.preventDefault();
+
+      dropdowns.forEach(d => {
+        if (d !== dropdown) d.classList.remove("show");
+      });
+
+      dropdown.classList.toggle("show");
+    });
+  });
+
+  document.addEventListener("click", (e) => {
+    dropdowns.forEach(dropdown => {
+      if (!dropdown.contains(e.target)) {
+        dropdown.classList.remove("show");
+      }
+    });
+  });
+});
+
+</script>
+    </section>
+  </section>
+</main>
+
+</div></body></html>

@@ -1,0 +1,167 @@
+/* ============================= */
+/* NAV DROPDOWN ANIMATIONS */
+/* ============================= */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-toggle {
+  cursor: pointer;
+  position: relative;
+}
+
+/* little arrow */
+.dropdown-toggle::after {
+  content: "";
+  display: inline-block;
+  margin-left: 6px;
+  vertical-align: 3px;
+  border-top: 5px solid var(--muted);
+  border-right: 5px solid transparent;
+  border-left: 5px solid transparent;
+  transition: 0.2s ease;
+}
+
+.dropdown.show .dropdown-toggle::after {
+  transform: rotate(180deg);
+  border-top-color: white;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 120%;
+  left: 0;
+  background: var(--card);
+  border-radius: 10px;
+  min-width: 200px;
+  padding: 8px 0;
+  z-index: 1000;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+}
+
+.dropdown-content li {
+  list-style: none;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 10px 16px;
+  color: var(--muted);
+}
+
+.dropdown-content a:hover {
+  background: rgba(225, 6, 0, 0.1);
+  color: white;
+}
+
+.dropdown.show .dropdown-content {
+  display: block;
+}
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    position: absolute;
+    top: 120%;
+    left: 0;
+    background: rgba(20, 5, 5, 0.95);
+    backdrop-filter: blur(8px);
+    border-radius: 10px;
+    padding: 6px 0;
+    min-width: 100%;
+    border: 1px solid rgba(255,255,255,0.05);
+    box-shadow:
+        0 10px 30px rgba(0,0,0,0.5),
+        0 0 20px rgba(220,38,38,0.15);
+    /* Animation Start State */
+    opacity: 0;
+    transform: translateY(-10px) scale(0.98);
+    pointer-events: none;
+    transition:
+        opacity 250ms ease,
+        transform 250ms ease;
+}
+
+/* SHOW STATE */
+
+.dropdown.show .dropdown-content {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    pointer-events: auto;
+}
+
+/* Dropdown Links */
+
+.dropdown-content li a {
+    display: block;
+    padding: 10px 16px;
+    color: white;
+    transition: all 220ms ease;
+}
+
+/* ============================= */
+/* RED GLOW HOVER EFFECT */
+/* ============================= */
+
+.dropdown-content li a:hover {
+    background: rgba(239,68,68,0.15);
+
+    box-shadow:
+        inset 0 0 12px rgba(239,68,68,0.25),
+        0 0 10px rgba(239,68,68,0.2);
+
+    padding-left: 20px;
+}
+
+/* ============================= */
+/* NAV LINK HOVER GLOW */
+/* ============================= */
+
+.nav a {
+    position: relative;
+    transition: color 250ms ease;
+}
+
+.nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+
+    width: 0%;
+    height: 2px;
+
+    background: linear-gradient(90deg, #ef4444, #dc2626);
+
+    transition: width 250ms ease;
+}
+
+.nav a:hover::after {
+    width: 100%;
+}
+
+.nav a:hover {
+    color: white;
+    text-shadow: 0 0 8px rgba(239,68,68,0.6);
+}
+
+/* ============================= */
+/* DROPDOWN ARROW ANIMATION */
+/* ============================= */
+
+.dropdown-toggle::after {
+    content: "";
+    display: inline-block;
+    margin-left: 6px;
+    border-top: .35em solid;
+    border-right: .35em solid transparent;
+    border-left: .35em solid transparent;
+
+    transition: transform 250ms ease;
+}
+
+.dropdown.show .dropdown-toggle::after {
+    transform: rotate(180deg);
+}

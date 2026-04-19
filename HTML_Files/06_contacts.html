@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">    <title>SuRGe — Roster</title>
+    <meta name="description" content="SuRGe is a clan of players founded on July 16th 2024. Join us for competitive and casual play." />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="SuRGe Clan" />
+    <meta property="og:description" content="SuRGe is a clan of players that play a vr game called POPULATION:ONE and was founded on July 16th 2024." />
+    <meta property="og:image" content="https://i.imgur.com/a2w09ff.png" />
+    <link rel="icon" href="https://i.imgur.com/a2w09ff.png" />
+    <link rel="stylesheet" href="../CSS_Files/05_contacts.css" />
+    <link rel="stylesheet" href="../CSS_Files/06_navbar.css">
+
+</head>
+<body>
+  <div class="page">
+    <header class="site-header">
+      <div class="brand">
+        <button id="menuBtn" aria-label="Toggle menu" class="hamburger" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <a href="../index.html" class="logo"><img style="width:24px; height:24px" src="https://i.postimg.cc/L5f9MVSf/fully-transparent.png">  SuRGe - Socials</a>
+      </div>
+    <nav id="mainNav" class="nav">
+    <!-- About SRG -->
+    <div class="dropdown">
+      <a class="dropdown-toggle">About SRG</a>
+      <ul class="dropdown-content">
+        <li><a href="02_info.html">More Info</a></li>
+        <li><a href="03_roster.html">Clan Roster</a></li>
+        <li><a href="04_comp.html">Competitive</a></li>
+      </ul>
+    </div>
+
+    <!-- Join SuRGe -->
+    <div class="dropdown">
+      <a class="dropdown-toggle">Join SuRGe</a>
+      <ul class="dropdown-content">
+        <li><a href="05_tryouts.html">Tryouts</a></li>
+        <li><a href="06_contacts.html">Socials</a></li>
+      </ul>
+    </div>
+    </nav>
+    </header>
+
+    <main>
+    <section id="home" class="hero">
+        <!-- Background video (muted, looped) -->
+        <video id="bgVideo" class="hero-video" autoplay muted loop playsinline aria-hidden="true" poster="assets/hero-poster.jpg">
+          <source src="assets/hero-loop.mp4" type="video/mp4">
+          <source src="assets/hero-loop.webm" type="video/webm">
+        </video>
+        <!-- Particle canvas overlay -->
+        <canvas id="particleCanvas" class="particle-canvas" aria-hidden="true"></canvas>
+        <div class="hero-content">
+        <img src="https://i.postimg.cc/R0JGzPhQ/fully-transparent.png" class="srg-logo" alt="SRG Clan Logo"/>
+          <h1 class="hero-title">
+            <span style="color:white">Contact us today!</span>
+          </h1>
+        </div>
+        <!-- Animated SVG wave -->
+        <svg class="hero-wave" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true">
+          <path fill="currentColor" d="M0,40 C220,140 440,0 720,40 C1000,80 1220,0 1440,40 L1440 120 L0 120 Z"></path>
+        </svg>
+      </section>
+    <!-- Contacts Section -->
+    <section id="Contacts" class="supported-games" style="margin-top:-7%">
+        <div class="section-content-container section--centered" style="color:white; text-align:center; background-color:#2b0404;">
+    <div class="section-sep" aria-hidden="true">
+    <h2 style="text-align:center; color:white; margin:20px;">Social Media Links</h2>
+        </div>
+        <div style="margin-top:2%;">
+        <body style="text-align:center">
+            <a href="https://youtu.be/DLzxrzFCyOs"><img class="circle" src="https://www.pngmart.com/files/15/Circle-Facebook-Logo-PNG-Background-Image.png" alt="SuRGe YouTube"/></a>
+            <a href="https://youtu.be/DLzxrzFCyOs"><img class="circle" src="https://www.pinclipart.com/picdir/big/232-2328226_circle-clipart-png.png" alt="SuRGe YouTube"/></a>
+            <a href="https://youtu.be/DLzxrzFCyOs"><img class="circle" src="https://th.bing.com/th/id/R.7f26e1a2dcc7603b31954afeed40a865?rik=6rb5qjvtcVUqzQ&pid=ImgRaw&r=0&adlt=strict" alt="SuRGe TikTok"/></a>
+            <a href="https://discord.gg/FVskmHG9WB" alt="SuRGe Discord Server"><img class="circle" src="https://clipartcraft.com/images/discord-logo-transparent-svg-1.png"/></a>
+            <a href="https://youtu.be/DLzxrzFCyOs"><img class="circle" src="https://clipartcraft.com/images/twitch-logo-png-circle.png" alt="SRGxPureSho Twitch"/></a>
+        </body>
+        </div>    
+        <footer class="site-footer" style="margin-top:2%">
+      <p>© <span id="year"></span> Made & Developed by: PureSho</p>
+        </footer>
+    </div>
+    </section>
+    <script>
+// script.js - lightweight interactions & particle background + background video handling
+
+// Utility: set current year
+document.getElementById('year').textContent = new Date().getFullYear();
+
+// NAV BAR
+menuBtn.addEventListener('click', () => {
+  const expanded = menuBtn.getAttribute('aria-expanded') === 'true';
+  menuBtn.setAttribute('aria-expanded', String(!expanded));
+  if (!expanded) {
+    // Open mobile menu: set mobile styles
+    mainNav.style.display = 'flex';
+    mainNav.style.flexDirection = 'column';
+    mainNav.style.gap = '12px';
+    mainNav.style.position = 'absolute';
+    mainNav.style.right = '20px';
+    mainNav.style.top = '66px';
+    mainNav.style.background = 'rgba(6,10,20,0.6)';
+    mainNav.style.padding = '12px';
+    mainNav.style.borderRadius = '10px';
+    mainNav.style.zIndex = '99';
+  } else {
+    // CLOSE: remove ALL inline styles set above
+    mainNav.style.display = '';
+    mainNav.style.flexDirection = '';
+    mainNav.style.gap = '';
+    mainNav.style.position = '';
+    mainNav.style.right = '';
+    mainNav.style.top = '';
+    mainNav.style.background = '';
+    mainNav.style.padding = '';
+    mainNav.style.borderRadius = '';
+    mainNav.style.zIndex = '';
+  }
+});
+// small enhancement: smooth-link navigation offset for header
+document.querySelectorAll('a[href^="#"]').forEach(anchor=>{
+  anchor.addEventListener('click',(e)=>{
+    const target = document.querySelector(anchor.getAttribute('href'));
+    if (target){
+      e.preventDefault();
+      const headerOffset = 72;
+      const top = target.getBoundingClientRect().top + window.scrollY - headerOffset;
+      window.scrollTo({top, behavior:'smooth'});
+      // close mobile nav if open
+      if(menuBtn.getAttribute('aria-expanded') === 'true'){ menuBtn.click(); }
+    }
+  });
+});
+const containers = document.querySelectorAll('.media-container');
+containers.forEach(container => {
+  const video = container.querySelector('.hover-video');
+  container.addEventListener('mouseenter', () => video.play());
+  container.addEventListener('mouseleave', () => {
+    video.pause();
+    video.currentTime = 0;
+  });
+});
+
+// IntersectionObserver for reveal animations
+const reveals = document.querySelectorAll('.reveal');
+const obs = new IntersectionObserver((entries) => {
+  entries.forEach(e=>{
+    if(e.isIntersecting){e.target.classList.add('visible'); obs.unobserve(e.target)}
+  })
+},{threshold: 0.12});
+reveals.forEach(r=>obs.observe(r));
+
+// Background video element
+const bgVideo = document.getElementById('bgVideo');
+
+// Simple particle system on a canvas
+const canvas = document.getElementById('particleCanvas');
+const ctx = canvas.getContext('2d');
+let particles = [];
+let W = 0, H = 0;
+function resize(){
+  const dpr = window.devicePixelRatio || 1;
+  W = canvas.clientWidth = canvas.width = Math.floor(window.innerWidth * dpr);
+  H = canvas.clientHeight = canvas.height = Math.floor(window.innerHeight * dpr);
+  initParticles();
+}
+window.addEventListener('resize', resize, {passive:true});
+resize();
+
+function initParticles(){
+  particles = [];
+  const count = Math.min(120, Math.floor((W*H)/(1200*9))); // scale with screen
+  for(let i=0;i<count;i++){
+    particles.push({
+      x: Math.random()*W,
+      y: Math.random()*H,
+      vx: (Math.random()-0.5)*0.3,
+      vy: (Math.random()-0.5)*0.3,
+      r: Math.random()*2.2 + 0.6,
+      alpha: Math.random()*0.6 + 0.18
+    });
+  }
+}
+
+let mouse = {x: null, y: null};
+window.addEventListener('mousemove', (e)=>{
+  mouse.x = e.clientX * (window.devicePixelRatio || 1);
+  mouse.y = e.clientY * (window.devicePixelRatio || 1);
+});
+window.addEventListener('mouseout', ()=>{mouse.x = null; mouse.y = null});
+
+// Draw loop
+function draw(){
+  ctx.clearRect(0,0,W,H);
+  // soft radial gradient overlay
+  const g = ctx.createLinearGradient(0,0,W,H);
+  g.addColorStop(0, 'rgba(239,68,68,0.0)');
+  g.addColorStop(1, 'rgba(239,68,68,0.06)');
+  ctx.fillStyle = g;
+  ctx.fillRect(0,0,W,H);
+
+  particles.forEach(p=>{
+    // mouse parallax: slight attraction/repel effect
+    if(mouse.x !== null && mouse.y !== null){
+      const dx = p.x - mouse.x;
+      const dy = p.y - mouse.y;
+      const dist = Math.sqrt(dx*dx + dy*dy) + 0.001;
+      const force = Math.min(120 / (dist*0.6), 0.8);
+      p.vx += (dx/dist)*force*0.0008;
+      p.vy += (dy/dist)*force*0.0008;
+    }
+
+    p.x += p.vx;
+    p.y += p.vy;
+
+    // wrap
+    if(p.x < -10) p.x = W + 10;
+    if(p.x > W + 10) p.x = -10;
+    if(p.y < -10) p.y = H + 10;
+    if(p.y > H + 10) p.y = -10;
+
+    // draw
+    ctx.beginPath();
+    ctx.fillStyle = `rgba(239,68,68,${p.alpha})`; // soft mint
+    ctx.arc(p.x, p.y, p.r, 0, Math.PI*2);
+    ctx.fill();
+  });
+
+  // subtle connecting lines for close particles
+  for(let i=0;i<particles.length;i++){
+    for(let j=i+1;j<particles.length;j++){
+      const a = particles[i], b = particles[j];
+      const dx = a.x - b.x, dy = a.y - b.y;
+      const dist = Math.sqrt(dx*dx + dy*dy);
+      if(dist < 70){
+        ctx.beginPath();
+        ctx.strokeStyle = `rgba(239,68,68,${0.08*(1 - dist/70)})`;
+        ctx.moveTo(a.x, a.y);
+        ctx.lineTo(b.x, b.y);
+        ctx.lineWidth = 1;
+        ctx.stroke();
+      }
+    }
+  }
+
+  requestAnimationFrame(draw);
+}
+requestAnimationFrame(draw);
+
+// Accessibility: respect reduced motion
+const mq = window.matchMedia('(prefers-reduced-motion: reduce)');
+if (mq.matches) {
+  // stop canvas animation and heavy JS if reduced motion is requested
+  if (canvas) canvas.style.display = 'none';
+  // hide/pause background video when reduced motion is requested
+  if (bgVideo) {
+    try { bgVideo.pause(); } catch (e) {}
+    bgVideo.style.display = 'none';
+  }
+  // reveal everything immediately
+  reveals.forEach(r => r.classList.add('visible'));
+} else {
+  // try to play background video (muted to allow autoplay on most mobile/desktop browsers)
+  if (bgVideo) {
+    // some browsers may block autoplay even if muted; catch silently
+    bgVideo.play().catch(()=>{ /* ignore */ });
+  }
+}
+    </script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const dropdowns = document.querySelectorAll(".dropdown");
+
+  dropdowns.forEach(dropdown => {
+    const toggle = dropdown.querySelector(".dropdown-toggle");
+
+    toggle.addEventListener("click", (e) => {
+      e.preventDefault();
+
+      dropdowns.forEach(d => {
+        if (d !== dropdown) d.classList.remove("show");
+      });
+
+      dropdown.classList.toggle("show");
+    });
+  });
+
+  document.addEventListener("click", (e) => {
+    dropdowns.forEach(dropdown => {
+      if (!dropdown.contains(e.target)) {
+        dropdown.classList.remove("show");
+      }
+    });
+  });
+});
+
+</script>
+</main>
+</body>
+</html>

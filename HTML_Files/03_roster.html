@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SuRGe — Roster</title>
+    <meta name="description" content="SuRGe is a clan of players founded on July 16th 2024. Join us for competitive and casual play." />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="SuRGe Clan" />
+    <meta property="og:description" content="SuRGe is a clan of players that play a vr game called POPULATION:ONE and was founded on July 16th 2024." />
+    <meta property="og:image" content="https://i.imgur.com/a2w09ff.png" />
+    <link rel="icon" href="https://i.imgur.com/a2w09ff.png" />
+    <link rel="stylesheet" href="../CSS_Files/03_roster.css">
+    <link rel="stylesheet" href="../CSS_Files/06_navbar.css">
+</head>
+<body>
+  <div class="page">
+    <header class="site-header">
+      <div class="brand">
+        <button id="menuBtn" aria-label="Toggle menu" class="hamburger" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <a href="../index.html" class="logo">
+          <img src="https://i.postimg.cc/L5f9MVSf/fully-transparent.png" alt="logo" style="width:24px;height:24px">
+          SuRGe - Clan Roster
+        </a>
+      </div>
+    <nav id="mainNav" class="nav">
+    <!-- About SRG -->
+    <div class="dropdown">
+      <a class="dropdown-toggle">About SRG</a>
+      <ul class="dropdown-content">
+        <li><a href="02_info.html">More Info</a></li>
+        <li><a href="03_roster.html">Clan Roster</a></li>
+        <li><a href="04_comp.html">Competitive</a></li>
+      </ul>
+    </div>
+
+    <!-- Join SuRGe -->
+    <div class="dropdown">
+      <a class="dropdown-toggle">Join SuRGe</a>
+      <ul class="dropdown-content">
+        <li><a href="05_tryouts.html">Tryouts</a></li>
+        <li><a href="06_contacts.html">Socials</a></li>
+      </ul>
+    </div>
+    </nav>
+    </header>
+
+    <main>
+      <section id="home" class="hero">
+        <video id="bgVideo" class="hero-video" autoplay muted loop playsinline aria-hidden="true" poster="">
+          <!-- optional video sources can be added to assets/hero-loop.mp4 or webm -->
+        </video>
+        <canvas id="particleCanvas" class="particle-canvas" aria-hidden="true"></canvas>
+
+        <div class="hero-content">
+          <img src="https://i.postimg.cc/R0JGzPhQ/fully-transparent.png" class="srg-logo" alt="SRG Clan Logo" />
+
+          <div class="section-sep" aria-hidden="true">
+            <h2 style="text-align:center; color:white; margin:10px 0 0; font-size:34px;">Clan Roster</h2>
+          </div>
+
+          <section id="live" class="section live-data">
+            <div id="sheetStatus" class="sheet-status" style="margin-top:-40px;">
+              Loading roster…
+            </div>
+            <div class="sheet-categories" aria-hidden="true"></div>
+
+            <div id="sheetWrapper" class="sheet-wrapper" aria-live="polite"></div>
+
+            <nav id="pagination" class="pagination" aria-label="Sheet pagination"></nav>
+          </section>
+
+          <h1 class="hero-title" style="margin-top:18px;">
+            <span id="typed"></span><span class="cursor"></span>
+          </h1>
+        </div>
+        <svg class="hero-wave" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true">
+          <path fill="currentColor" d="M0,40 C220,140 440,0 720,40 C1000,80 1220,0 1440,40 L1440 120 L0 120 Z"></path>
+        </svg>
+      </section>
+    </main>
+  </div>
+
+  <!-- Player Modal -->
+  <div id="playerModal" class="player-modal" aria-hidden="true">
+    <div class="player-modal-overlay" data-action="close" tabindex="-1"></div>
+    <div class="player-card" role="dialog" aria-modal="true" aria-labelledby="playerName" tabindex="-1">
+      <button class="close-btn" aria-label="Close player card" data-action="close">&times;</button>
+      <div class="player-card-inner">
+        <div class="player-avatar" id="playerAvatar" aria-hidden="true"></div>
+        <div class="player-info">
+          <h2 id="playerName">Player Name</h2>
+          <p class="player-role" id="playerRole"></p>
+          <p class="player-status" id="playerStatus"></p>
+          <p class="player-gender" id="playerGender"></p>
+          <div id="playerStatsBtn" class="player-stats-btn"></div>
+
+
+          <!-- Social icons container - will be populated if social links exist in the row -->
+          <div class="player-social" id="playerSocial" aria-label="Player social links"></div>
+
+          <div class="player-meta" id="playerMeta"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="../JS_Files/03_roster.js" defer></script>
+<script>
+  const tabButtons = document.querySelectorAll('.tab-btn');
+  const tabContents = document.querySelectorAll('.tab-content');
+
+  tabButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const target = btn.dataset.tab;
+
+      tabButtons.forEach(b => b.classList.remove('active'));
+      tabContents.forEach(c => c.classList.remove('active'));
+
+      btn.classList.add('active');
+      document.getElementById(target).classList.add('active');
+    });
+  });
+  /* ---------- Mobile menu toggle (no persistent inline styling leak) ---------- */
+  if (menuBtn && mainNav) {
+    menuBtn.addEventListener('click', () => {
+      const isOpen = menuBtn.getAttribute('aria-expanded') === 'true';
+      menuBtn.setAttribute('aria-expanded', String(!isOpen));
+      if (!isOpen) {
+        // Apply only necessary inline styles for the mobile menu to appear (temporary)
+        mainNav.dataset._wasHidden = getComputedStyle(mainNav).display === 'none' ? 'true' : '';
+        mainNav.style.display = 'flex';
+        mainNav.style.flexDirection = 'column';
+        mainNav.style.gap = '12px';
+        mainNav.style.position = 'absolute';
+        mainNav.style.right = '16px';
+        mainNav.style.top = '66px';
+        mainNav.style.background = 'rgba(6,10,20,0.7)';
+        mainNav.style.padding = '12px';
+        mainNav.style.borderRadius = '10px';
+        mainNav.style.zIndex = '9999';
+      } else {
+        // Revert inline styles
+        ['display','flexDirection','gap','position','right','top','background','padding','borderRadius','zIndex'].forEach(k => mainNav.style[k] = '');
+        if (mainNav.dataset._wasHidden) { mainNav.style.display = ''; delete mainNav.dataset._wasHidden; }
+      }
+    });
+  }
+
+  /* Close mobile nav if clicking outside (optional friendly behavior) */
+  document.addEventListener('click', (e) => {
+    if (!menuBtn || !mainNav) return;
+    if (menuBtn.getAttribute('aria-expanded') !== 'true') return;
+    if (!mainNav.contains(e.target) && !menuBtn.contains(e.target)) {
+      menuBtn.click();
+    }
+  });
+</script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const dropdowns = document.querySelectorAll(".dropdown");
+
+  dropdowns.forEach(dropdown => {
+    const toggle = dropdown.querySelector(".dropdown-toggle");
+
+    toggle.addEventListener("click", (e) => {
+      e.preventDefault();
+
+      dropdowns.forEach(d => {
+        if (d !== dropdown) d.classList.remove("show");
+      });
+
+      dropdown.classList.toggle("show");
+    });
+  });
+
+  document.addEventListener("click", (e) => {
+    dropdowns.forEach(dropdown => {
+      if (!dropdown.contains(e.target)) {
+        dropdown.classList.remove("show");
+      }
+    });
+  });
+});
+
+</script>
+</body>
+</html>
