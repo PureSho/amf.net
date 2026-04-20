@@ -320,8 +320,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  background-image: url("../assets/images/navbar-img.png");
-  background-repeat: repeat;
+  background-color: var(--bg-oxford-blue);
   padding: 10px 12px;
   z-index: 4;
 }
