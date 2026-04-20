@@ -45,6 +45,8 @@ TOTAL LINES UPDATED: 33/612
     rel="stylesheet">
 
   <link rel="stylesheet" href="./CSS_Files/01_index2.css">
+  <link rel="stylesheet" href="./CSS_Files/06_navbar.css">
+
   <!-- 
     - preload images
   -->
@@ -66,27 +68,25 @@ TOTAL LINES UPDATED: 33/612
         <img src="assets/amf_logo.png" width="55" height="22" alt="unigine home">
       </a>
 
-      <nav class="navbar" data-navbar>
-        <ul class="navbar-list">
+   <nav id="mainNav" class="nav">
+    <div class="dropdown">
+      <a class="dropdown-toggle">About SRG</a>
+      <ul class="dropdown-content">
+        <li><a href="HTML_Files/02_info.html">More Info</a></li>
+        <li><a href="HTML_Files/03_roster.html">Clan Roster</a></li>
+        <li><a href="HTML_Files/04_comp.html">Competitive</a></li>
+      </ul>
+    </div>
 
-          <li class="navbar-item">
-            <a href="#home" class="navbar-link" data-nav-link>home</a>
-          </li>
-
-          <li class="navbar-item">
-            <a href="#tournament" class="navbar-link" data-nav-link>tournament</a>
-          </li>
-
-          <li class="navbar-item">
-            <a href="#news" class="navbar-link" data-nav-link>news</a>
-          </li>
-
-          <li class="navbar-item">
-            <a href="#" class="navbar-link" data-nav-link>contact</a>
-          </li>
-
-        </ul>
-      </nav>
+    <!-- Join SuRGe -->
+    <div class="dropdown">
+      <a class="dropdown-toggle">Join SuRGe</a>
+      <ul class="dropdown-content">
+        <li><a href="HTML_Files/05_tryouts.html">Tryouts</a></li>
+        <li><a href="HTML_Files/06_contacts.html">Socials</a></li>
+      </ul>
+    </div>
+</nav>
 
       <a href="#" class="btn" data-btn>join our team</a>
 
