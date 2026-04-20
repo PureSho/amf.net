@@ -10,8 +10,8 @@ const PAGE_SIZE = 10;
 const SHEET_COLUMNS = [
   { header: 'Members', colLetter: 'C' },
   { header: 'Role(s)', colLetter: 'E' },
-  { header: 'Status', colLetter: 'C' },
-  { header: 'Gender', colLetter: 'H' }
+  { header: 'Status', colLetter: 'G' },
+  { header: 'Gender', colLetter: 'I' }
 ];
 
 // extra columns
